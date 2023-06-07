@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-styletile">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="styletile" clip-path="url(#clip-styletile)">
+    <rect width="1920" height="1080" fill="#fffaec"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="1176" height="912" rx="94" transform="translate(494 84)" fill="#fff"/>
+    <ellipse id="Ellipse_7" data-name="Ellipse 7" cx="102" cy="106" rx="102" ry="106" transform="translate(144 84)" fill="#9eb9b9"/>
+    <ellipse id="Ellipse_5" data-name="Ellipse 5" cx="102" cy="106" rx="102" ry="106" transform="translate(144 784)" fill="#c9b792"/>
+    <ellipse id="Ellipse_6" data-name="Ellipse 6" cx="102" cy="106" rx="102" ry="106" transform="translate(144 260)" fill="#88a18f"/>
+    <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="102" cy="106" rx="102" ry="106" transform="translate(144 618)" fill="#b8cb96"/>
+    <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="102" cy="106" rx="102" ry="106" transform="translate(144 434)" fill="#abc7ab"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="1176" height="162" transform="translate(494 459)" fill="#c9b792"/>
+    <text id="H1_H2_H3" data-name="H1, H2, H3" transform="translate(580.5 343)" fill="#7d7056" stroke="#7d7056" stroke-width="1" font-size="202" font-family="SitkaText, Sitka Text"><tspan x="0" y="0">H1, H2, H3</tspan></text>
+    <text id="Paragraf_" data-name="Paragraf " transform="translate(712 854.5)" fill="#7d7056" stroke="#7d7056" stroke-width="1" font-size="206" font-family="TimesNewRomanPSMT, Times New Roman" letter-spacing="0.011em"><tspan x="0" y="0">Paragraf </tspan></text>
+  </g>
+</svg>
