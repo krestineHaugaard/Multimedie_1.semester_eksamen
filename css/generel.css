@@ -7,12 +7,45 @@
     --tema-color-3:#b8cb96;
     --tema-color-4:#c9b792;
     --body-color:#fffaec;
-    --text: 20px;
+    --text-size: 20px;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
 
 body{
     background-color: var(--body-color);
-    margin: 0%;
+}
+
+header{
+    background-color: var(--header-color);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tema-color-1);
+    font-size: 20px;
+    height: 60px;
+}
+
+h1{
+    color: var(--text-color);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    color: var(--text-color);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3{
+    color: var(--text-color);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 p{
@@ -20,121 +53,95 @@ p{
     font-family: 'Times New Roman', Times, serif;
 }
 
-header{
-    background-color: var(--header-color);
-    display: flex;
-    justify-content: center;
+li{ 
+    list-style: none;
 }
 
-.header, .header-burger{
-    background-color: var(--background-color);
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.hbutton{
-    background-color: var(--background-color);
-    padding: 5px 70px;
-    font-size: 25px;
-    border: none;
+a{
     color: var(--text-color);
     text-decoration: none;
+    font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.hbutton:hover p{
-    border-bottom: solid 2px var(--text-color);
-    cursor: pointer;
-}
-
-.header-burger .hbutton:hover {
-    border-bottom: solid 2px var(--text-color);
-    cursor: pointer;
-}
-
-.header-burger .hbutton{
-    padding: 20px 70px;
-}
-
-.dropdown-cont{
-    display: none;
-    
-}
-
-.dropdown-cont{
-    margin: 0px 40px 20px 70px;
-}
-
-.dropdown-cont a{
-    text-decoration: none;
-    
-}
-
-.dropdown-cont a:hover {
-    border-bottom: solid 2px var(--text-color);
-    cursor: pointer;
-}
-
-.header:hover .dropdown-cont{
-    display: block;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--background-color);
-}
-
-.header-burger{
-    display: none;
-}
-
-footer{
+.navbar{
+    height: 90px;
     display: flex;
     justify-content: center;
-    background-color: var(--tema-color-1);
-    padding: 20px;
+    align-items: center;
+    padding: 0 24px;
 }
 
-.footer p{
-    border: none;
-    background-color: var(--tema-color-1);
-    color: var(--text-color);
-    font-size: 22px;
+.navmenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
 }
 
-@media  (max-width:1300px){
-    
-    .header{
-        display: none;
+.navlink:hover{
+    border-bottom: solid var(--tema-color-2) 2px;
+}
+
+.burgermenu{
+    display: none;
+    cursor: pointer;
+}
+
+@media(max-width:1300px){
+
+    .burgermenu{
+        display:block;
     }
 
-    .header-burger{
-        display: block;
-    }
-
-    .header-burger:hover .dropdown-cont{
-        display: block;
-    }
-
-    header{
+    .navbar{
         justify-content: flex-start;
     }
 
-    li{
-        list-style: none;
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background-color: var(--text-color);
+        border-radius: 500px;
     }
 
-    .dropdown-cont li:hover {
-        border-bottom: solid 2px var(--text-color);
-        cursor: pointer;
+    .burgermenu.active .bar:nth-child(2){
+        opacity: 0;
     }
 
-    .dropdown-cont {
-        margin: 20px 40px 20px 10px;
+    .burgermenu.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burgermenu.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navmenu{
+        position: absolute;
+        width: 150px;
+        left: -100%;
+        top: 90px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--body-color);
+        text-align: start;
+        transition: 0.3s;
+    }
+
+    a{
         font-size: 20px;
     }
 
-    .indryk {
-        font-size: 15px;
-        margin-left: 20px;
+    .navindhold{
+        margin: 16px 0;
+    }
+
+    .navmenu.active {
+        left:0%;
     }
 
 }
