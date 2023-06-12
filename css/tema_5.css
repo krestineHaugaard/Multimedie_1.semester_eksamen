@@ -7,5 +7,16 @@
     --tema-color-3:#b8cb96;
     --tema-color-4:#c9b792;
     --body-color:#fffaec;
-    --text: 20px;
+}
+
+a{
+    margin: 15px 20px 15px 20px;
+}
+
+a:hover{
+    border-bottom: solid var(--tema-color-2) 2px;
+}
+
+@media (max-width: 700px){
+    
 }

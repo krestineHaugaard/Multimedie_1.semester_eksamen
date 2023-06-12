@@ -7,5 +7,33 @@
     --tema-color-3:#b8cb96;
     --tema-color-4:#c9b792;
     --body-color:#fffaec;
-    --text: 20px;
+}
+
+h2{
+    margin: 20px 20px 15px 20px;
+}
+
+.color{
+    height: 100px;
+    background-color: var(--tema-color-2);
+}
+
+a{
+    margin: 15px 20px 15px 20px;
+}
+
+a:hover{
+    border-bottom: solid var(--tema-color-2) 2px;
+}
+
+.grid_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    contain: content;
+}
+
+@media (max-width: 700px){
+    .grid_1{
+        grid-template-columns: 1fr;
+    }
 }

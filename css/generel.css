@@ -7,7 +7,6 @@
     --tema-color-3:#b8cb96;
     --tema-color-4:#c9b792;
     --body-color:#fffaec;
-    --text-size: 20px;
 }
 
 *{
@@ -17,7 +16,15 @@
 }
 
 body{
-    background-color: var(--body-color);
+    background-color: var(--background-color);
+}
+
+.frame{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 header{
@@ -30,31 +37,65 @@ header{
     align-items: center;
     background-color: var(--tema-color-1);
     font-size: 20px;
-    height: 60px;
+    height: 100px;
 }
 
 h1{
     color: var(--text-color);
     font-family: 'Times New Roman', Times, serif;
+    margin: 30px 20px 0px 20px;
+    font-size: 55px;
 }
 
 h2{
     color: var(--text-color);
     font-family: 'Times New Roman', Times, serif;
+    margin: 15px 20px 15px 20px;
+    font-size: 35px;
 }
 
 h3{
     color: var(--text-color);
     font-family: 'Times New Roman', Times, serif;
+    margin: 30px 20px 10px 20px;
+    font-size: 25px;
+}
+
+h4{
+    color: var(--text-color);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    font-size: 17px;
+    text-align: center;
 }
 
 p{
     color: var(--text-color);
     font-family: 'Times New Roman', Times, serif;
+    margin: 10px 20px 20px 20px;
+    font-size: 17px;
 }
 
 li{ 
     list-style: none;
+}
+
+.frame li{
+    color: var(--text-color);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px 20px 20px 40px;
+    font-size: 17px;
+    list-style-image: url(../img/small_plant.png);
+}
+
+h1, .indryk{
+    text-align: center;
+}
+
+.indryk p{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a{
@@ -62,6 +103,11 @@ a{
     text-decoration: none;
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
+}
+
+img{
+    max-width: 100%;
+    padding: 20px 20px 20px 20px;
 }
 
 .navbar{
@@ -130,6 +176,7 @@ a{
         background-color: var(--body-color);
         text-align: start;
         transition: 0.3s;
+        z-index: 2;
     }
 
     a{
