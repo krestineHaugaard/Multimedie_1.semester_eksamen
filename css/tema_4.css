@@ -71,6 +71,11 @@ a:hover{
         grid-template-columns: repeat(2,1fr);
     }
 
+    .grid_2 img, .grid_3 img{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .order{
         order: 2;
     }

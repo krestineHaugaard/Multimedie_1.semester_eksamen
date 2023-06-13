@@ -20,7 +20,7 @@ body{
 }
 
 .frame{
-    max-width: 1200px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 30px;
@@ -96,6 +96,7 @@ h1, .indryk{
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
 }
 
 a{

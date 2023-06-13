@@ -10,7 +10,15 @@
 }
 
 h2{
-    margin: 20px 20px 15px 20px;
+    margin: 10px 20px 15px 20px;
+}
+
+h5{
+    color: var(--text-color);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 30px 20px 30px 20px;
+    font-size: 35px;
+    text-align: center;
 }
 
 .color{
@@ -32,8 +40,36 @@ a:hover{
     contain: content;
 }
 
+.galleri{
+    display: flex;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+.galleri img{
+    width: 300px;
+    height: 300px;
+    padding: 0%;
+    margin: 0%;
+}
+
 @media (max-width: 700px){
     .grid_1{
         grid-template-columns: 1fr;
+    }
+
+    .galleri{
+        gap: 5px;
+    }
+
+    .galleri img{
+        width: 150px;
+        height: 150px;
     }
 }
